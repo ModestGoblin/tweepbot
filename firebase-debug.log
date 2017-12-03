@@ -1,0 +1,81 @@
+[debug] [2017-12-03T07:35:31.861Z] ----------------------------------------------------------------------
+[debug] [2017-12-03T07:35:31.864Z] Command:       /usr/local/Cellar/node/8.4.0/bin/node /usr/local/bin/firebase init
+[debug] [2017-12-03T07:35:31.864Z] CLI Version:   3.15.4
+[debug] [2017-12-03T07:35:31.864Z] Platform:      darwin
+[debug] [2017-12-03T07:35:31.864Z] Node Version:  v8.4.0
+[debug] [2017-12-03T07:35:31.864Z] Time:          Sun Dec 03 2017 02:35:31 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:31.864Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-03T07:35:31.879Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-12-03T07:35:31.879Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tommytw02/Desktop/tweepbot
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2017-12-03T07:35:54.297Z] ----------------------------------------------------------------------
+[debug] [2017-12-03T07:35:54.300Z] Command:       /usr/local/Cellar/node/8.4.0/bin/node /usr/local/bin/firebase serve
+[debug] [2017-12-03T07:35:54.300Z] CLI Version:   3.15.4
+[debug] [2017-12-03T07:35:54.300Z] Platform:      darwin
+[debug] [2017-12-03T07:35:54.300Z] Node Version:  v8.4.0
+[debug] [2017-12-03T07:35:54.300Z] Time:          Sun Dec 03 2017 02:35:54 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:54.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-03T07:35:54.316Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-03T07:35:54.316Z] > authorizing via signed-in user
+[debug] [2017-12-03T07:35:54.318Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:35:54 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:55.250Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:35:55.251Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tweepbot/tokens  
+ Sun Dec 03 2017 02:35:55 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:55.720Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/tommytw02/Desktop/tweepbot'...
+[info] 
+[debug] [2017-12-03T07:35:55.723Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:35:55 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:56.250Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:35:56.251Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/236249825704/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 02:35:56 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:57.071Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[debug] [2017-12-03T07:35:57.089Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:35:57 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:57.338Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:35:57.338Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/236249825704/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 02:35:57 GMT-0500 (EST)
+[debug] [2017-12-03T07:35:58.236Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5004 is not available. Trying another port...
+[debug] [2017-12-03T07:35:58.239Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:35:58 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:00.437Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:36:00.437Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/236249825704/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 02:36:00 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:00.998Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5008 is not available. Trying another port...
+[debug] [2017-12-03T07:36:01.001Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:36:01 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:01.277Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:36:01.277Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/236249825704/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 02:36:01 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:01.614Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5012 is not available. Trying another port...
+[debug] [2017-12-03T07:36:01.617Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tweepbot  
+ Sun Dec 03 2017 02:36:01 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:01.849Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-03T07:36:01.850Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/236249825704/clients/_:getWebAppConfig  
+ Sun Dec 03 2017 02:36:01 GMT-0500 (EST)
+[debug] [2017-12-03T07:36:02.395Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5016
+

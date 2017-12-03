@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import tweepy
 from textblob import TextBlob
 
@@ -13,20 +14,42 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-#Step 3 - Retrieve Tweets
-public_tweets = api.search('Olivia')
+brand = raw_input('Enter the Brand to find sentiments about: ')
+public_tweets = api.search(brand) # 1
+positive_tweets = 0.0 # 2 
+total_tweets = 0.0
 
 
-
-#CHALLENGE - Instead of printing out each tweet, save each Tweet to a CSV file
-#and label each one as either 'positive' or 'negative', depending on the sentiment 
-#You can decide the sentiment polarity threshold yourself
 
 
 for tweet in public_tweets:
-    print(tweet.text)
-    
-    #Step 4 Perform Sentiment Analysis on Tweets
-    analysis = TextBlob(tweet.text)
-    print(analysis.sentiment)
-    print("")
+
+	
+	#Step 4 Perform Sentiment Analysis on Tweets
+	analysis = TextBlob(tweet.text)
+	print(tweet.text)
+	total_tweets += 1.0
+
+	if analysis.sentiment.polarity > 0:
+		Label = 'POSITIVE'
+		positive_tweets += 1.0
+	else:
+		Label = 'NEGATIVE'
+
+
+if positive_tweets/total_tweets > 0.8:
+	print("😍" + brand)
+
+elif positive_tweets/total_tweets > 0.5:
+	print('🙂 ' + brand)
+
+elif positive_tweets/total_tweets > 0.3:
+	print('🤔 ' + brand)
+else:
+	print('😡 ' + brand)
+
+#print(analysis)
+print(total_tweets)
+print(positive_tweets)
+print(tweet.text)
+
