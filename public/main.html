@@ -12,13 +12,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
+    <header class="masthead clearfix">
+      <div id ="headr" class="inner">
+        <h3 id="smtitle">TweepBot</h3>
+      </div>
+    </header>
     <div class="cover-container">
       <main class="inner cover" role="main">
-        <h1 id="title">TweepBot</h1>
-        <p class="lead">TweepBot analyzes the emotional content in a collection of tweets using the Emoj API. </p>
-        <p class="lead">
-          <a class="btn btn-lg btn-secondary" href="main.html"> Enter</a>
-        </p>
+        <div id="formgroup" class="form-group">
+          <label id="lbl" for="usr"> Enter a keyword to help TweepBot find tweets to analyze!</label>
+          <div id ="form">
+            <input type="text" class="form-control" placeholder="Enter text here...">
+            <p class="lead">
+            <a id="btn" class="btn btn-lg btn-secondary" href="#">Submit</a>
+            </p>
+          </div>
+        </div>
       </main>
     </div>    
   </body>

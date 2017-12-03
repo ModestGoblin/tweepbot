@@ -1,0 +1,9 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.cover-container {
+	background-color: #ff3300;
+}

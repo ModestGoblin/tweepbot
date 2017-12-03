@@ -37,19 +37,21 @@ for tweet in public_tweets:
 		Label = 'NEGATIVE'
 
 
-if positive_tweets/total_tweets > 0.8:
-	print("😍" + brand)
+	if positive_tweets/total_tweets > 0.8:
+		print("😍" + brand)
 
-elif positive_tweets/total_tweets > 0.5:
-	print('🙂 ' + brand)
+	elif positive_tweets/total_tweets > 0.5:
+		print('🙂 ' + brand)
 
-elif positive_tweets/total_tweets > 0.3:
-	print('🤔 ' + brand)
-else:
-	print('😡 ' + brand)
+	elif positive_tweets/total_tweets > 0.3:
+		print('🤔 ' + brand)
+	else:
+		print('😡 ' + brand)
 
-#print(analysis)
+	#print(analysis)
+	print(Label)
+	print("\n")
 print(total_tweets)
 print(positive_tweets)
-print(tweet.text)
+#print(tweet.text)
 
