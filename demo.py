@@ -2,7 +2,7 @@
 import tweepy
 from textblob import TextBlob
 
-# Step 1 - Authenticate
+
 consumer_key= 'BAx0g0ef9Ouy4rxNMFFfU3Mp4'
 consumer_secret= 'znpm5r0OFpnN9zwR6uHtM08e6KYsImZ6K0oWReqKgeHLsMSBnD'
 
@@ -24,8 +24,7 @@ total_tweets = 0.0
 
 for tweet in public_tweets:
 
-	
-	#Step 4 Perform Sentiment Analysis on Tweets
+
 	analysis = TextBlob(tweet.text)
 	print(tweet.text)
 	total_tweets += 1.0
