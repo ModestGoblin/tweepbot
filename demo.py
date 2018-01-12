@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
+from config import consumer_key, consumer_secret, access_token, access_token_secret
 import tweepy
 from textblob import TextBlob
 
 
-consumer_key= 'BAx0g0ef9Ouy4rxNMFFfU3Mp4'
-consumer_secret= 'znpm5r0OFpnN9zwR6uHtM08e6KYsImZ6K0oWReqKgeHLsMSBnD'
+consumer_key= ''
+consumer_secret= ''
 
-access_token='809180462790877184-roO2CwSuDMXw7U5e1CJbxBrO8eay9hE'
-access_token_secret='87w6y5DAVz0kXSbNJczIoIX9UDSipVRAe933B0aGK170u'
+access_token=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -16,7 +17,7 @@ api = tweepy.API(auth)
 
 brand = raw_input('Enter the Brand to find sentiments about: ')
 public_tweets = api.search(brand) # 1
-positive_tweets = 0.0 # 2 
+positive_tweets = 0.0 # 2
 total_tweets = 0.0
 
 
@@ -52,5 +53,4 @@ for tweet in public_tweets:
 	print("\n")
 print(total_tweets)
 print(positive_tweets)
-#print(tweet.text)
-
+print(tweet.text)
