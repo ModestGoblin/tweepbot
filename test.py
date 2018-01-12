@@ -19,11 +19,11 @@ headers = {
     }
 
 # Authenticate
-consumer_key= 'BAx0g0ef9Ouy4rxNMFFfU3Mp4'
-consumer_secret= 'znpm5r0OFpnN9zwR6uHtM08e6KYsImZ6K0oWReqKgeHLsMSBnD'
+consumer_key= ''
+consumer_secret= ''
 
-access_token='809180462790877184-roO2CwSuDMXw7U5e1CJbxBrO8eay9hE'
-access_token_secret='87w6y5DAVz0kXSbNJczIoIX9UDSipVRAe933B0aGK170u'
+access_token=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -49,17 +49,17 @@ for tweet in public_tweets:
         str = str.split(':', 1)[-1]
     print(str)
     str.replace(" ", "%")
-    
+
     conn.request("GET", "/api/classify?text=str&token=RNXkMoBg6RQlV0Nn", headers=headers)
     res = conn.getresponse()
     analysis = (res.read()).decode("utf-8")
-    
+
     #jsonParser(analysis)
-    
+
     #print(analysis)
     #print("\n")
-    
-    
+
+
     '''
     #Step 4 Perform Sentiment Analysis on Tweets
     analysis = TextBlob(tweet.text)
@@ -81,6 +81,3 @@ print(data.decode("utf-8"))
 print("/n")
 print(data2.decode("utf-8"))
 '''
-
-    
-    

@@ -28,11 +28,11 @@ headers = {
     }
 
 # Authenticate
-consumer_key= 'BAx0g0ef9Ouy4rxNMFFfU3Mp4'
-consumer_secret= 'znpm5r0OFpnN9zwR6uHtM08e6KYsImZ6K0oWReqKgeHLsMSBnD'
+consumer_key= ''
+consumer_secret= ''
 
-access_token='809180462790877184-roO2CwSuDMXw7U5e1CJbxBrO8eay9hE'
-access_token_secret='87w6y5DAVz0kXSbNJczIoIX9UDSipVRAe933B0aGK170u'
+access_token=''
+access_token_secret=''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -50,24 +50,24 @@ def jsonParser(json):
     arr = json.split("},{")
     for i in arr:
         if (len(i.split(":")) > 1 and i.split(":")[1].split(",")[0] == '"anxious"'):
-            anxious_values.append(int(i.split(":")[2]))        
+            anxious_values.append(int(i.split(":")[2]))
         #print(i)
         #split by "," handle label, handle value
     return json
 
-def handle_tweets(public_tweets):    
+def handle_tweets(public_tweets):
     for tweet in public_tweets:
         try:
             str = tweet.text
             str = ''.join(c for c in str if 0 < ord(c) < 127).replace(" ", "%")
-            conn.request("GET", "/api/classify?text=" + str + "&token=RNXkMoBg6RQlV0Nn", 
+            conn.request("GET", "/api/classify?text=" + str + "&token=RNXkMoBg6RQlV0Nn",
                          headers=headers)
             res = conn.getresponse()
             analysis = (res.read()).decode("utf-8")
             jsonParser(analysis)
         except  http.client.HTTPException as e:
             return("HTTPException")
-        
+
 handle_tweets(public_tweets)
 
 trace0 = go.Scatter(

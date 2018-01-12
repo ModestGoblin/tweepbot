@@ -1,3 +1,7 @@
+#TweepBot
+
+YHack 2017 proj
+
 ##Dependencies
 
 * tweepy (http://www.tweepy.org/)
@@ -11,4 +15,8 @@ Once you have your dependencies installed via pip, run the script in terminal vi
 
 ```
 python demo.py
+```
+or
+```
+python test.py
 ```
