@@ -19,6 +19,8 @@ plotly.tools.set_credentials_file(username='el1026', api_key='xzMjNZbKYeKWSsQEYd
 from plotly import __version__
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 
+from config import consumer_key, consumer_secret, access_token, access_token_secret
+
 #Connect with Emoj API
 conn = http.client.HTTPSConnection("www.emoj.ai")
 
